@@ -7,8 +7,12 @@ body{
 	height:100%;
 	width:100%;
 }
+.navbar{
+  margin-bottom: 0px;
+}
 .wrapper{
-	 background-color:blue;
+  background-image: url(./image/header-bg.png);
+  /* transform: rotate(90deg); */
 	 background-repeat:repeat-x;
 	 padding:5px 150px;
 }
@@ -17,9 +21,12 @@ body{
 	 font-size:20px;
 	 font-weight:400px;
 }
-.banner img{
-	position:relative;
-	width:100%
+.banner{
+  position:relative;
+}
+.banner-img{
+	position: relative;
+	width:100%;
 }
 .landing{
 	position:absolute;
@@ -27,38 +34,69 @@ body{
 	left:150px;
 	width:45%;
 }
+.watch-video{
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 6px 7px;
+  border: solid 1px white;
+  color: white;
+}
 .landing h1{
     font-size:70px;
     color:#ffffff;
 }
-.padding:{
+.learn-more{
+  position: absolute;
+  bottom: 41px;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+.padding {
 	text-align:center;
 	vertical-align:center;
 	background-color:lightgray;
 }
-.row{
-	margin-top:70px;
+.citidirect{
+  background-color: #d3d3d380;
+	padding:50px 0px;
 	text-align:center;
-	vertical-align:center;
 	font-family:arial;
 }
-.row1{
-	padding-top:50px;
-	text-align:center;
+.citidirect h2{
+  font-weight: 700;
+  color: black;
+}
+.features{
+  margin: 50px 0px;
 }
 .gallery {
-  margin: 5px;
-  border: 2px solid aqua;
-  float: left;
-  width: 250px;
-  margin-top:100px;
-  margin-left:170px;
-  padding:20px;
-  text-align:center;
-  font-size:15px;
-  background-color:lightgray;
+    border: 2px solid aqua;
+    float: left;
+    width: 330px;
+    height: 330px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: lightgray;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+.gallery button{
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 42px;
+  background-color: teal;
+  border-radius: 20px;
+  border: none;
+  color: white;
 
+}
+.gallery p{
+  width: 267px;
+}
 .gallery:hover {
   border: 2px solid red;
 }
@@ -72,20 +110,56 @@ body{
   padding: 15px;
   text-align: center;
 }
-.position{
-	position:relative;
+.desc a{
+  text-decoration: none;
 }
-.content{
-	margin-top:20px;
-	background-color:lightgray;
-	width:100%;
-	height:100%;
+
+
+.f-s-s{
+  position: relative;
+  height: 440px;
 }
-.col-xs-12{
-	vertical-align:middle;
-	text-align:center;
-	margin-top:70px;
+.f-s-s img{
+  position: absolute;
+  top: 94px;
+  left: 133px;
+  z-index: 2;
+
 }
+.f-s-s .right-cont{
+  position: absolute;
+  width: 1125px;
+  height: 350px;
+  background-color: #d3d3d380;
+  top: 70px;
+  right: 0px;
+}
+.f-s-s .right-cont h2{
+      /* text-align: center; */
+      width: 487px;
+      position: absolute;
+      top: 20px;
+      right: 321px;
+      font-weight: 800;
+}
+.f-s-s .right-cont a{
+      /* text-align: center; */
+      width: 487px;
+      position: absolute;
+      top: 200px;
+      right: 321px;
+      font-weight: 800;
+      text-decoration: none;
+}
+.f-s-s .right-cont p{
+  width: 487px;
+  position: absolute;
+  top: 100px;
+  right: 321px;
+}
+
+
+
 .col-sm-6{
 	margin-top:70px;
 }
@@ -122,4 +196,9 @@ body{
 }
 .row4:hover {
   border: 2px solid red;
+}
+.footer{
+  background-color: black;
+  margin: 40px 0;
+  color: white;
 }
